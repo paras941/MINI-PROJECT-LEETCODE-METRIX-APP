@@ -4,57 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LeetMetric</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
     <div class="container">
-        <!-- heading
-        user
-        stats -->
         <h1>LeetMetric</h1>
 
         <div class="user-container">
-            <p>Enter your username below:</p>
+            <p>Enter your LeetCode username below:</p>
             <div class="user-input-container">
                 <input type="text" placeholder="enter your username here" id="user-input">
                 <button id="search-btn">Search</button>
             </div>
+            <p id="error-message" class="error-message"></p>
+        </div>
+
+        <div class="profile-header" id="profile-header" style="display: none;">
+            <h2 id="username-display"></h2>
         </div>
 
         <div class="stats-container">
             
             <div class="progress">
-
                 <div class="progress-item">
                     <div class="easy-progress circle">
-                        <span id="easy-label"></span>
-                        <p>Easy</p>
+                        <span id="easy-label">0/0</span>
                     </div>
+                    <p>Easy</p>
                 </div>
 
                 <div class="progress-item ">
                     <div class="medium-progress circle">
-                        <span id="medium-label"></span>
-                        <p>Medium</p>
+                        <span id="medium-label">0/0</span>
                     </div>
+                    <p>Medium</p>
                 </div>
 
                 <div class="progress-item ">
                     <div class="hard-progress circle">
-                        <span id="hard-label"></span>
-                        <p>Hard</p>
+                        <span id="hard-label">0/0</span>
                     </div>
+                    <p>Hard</p>
                 </div>
-
             </div>
 
             <div class="stats-cards">
-                <!-- directly populate card here from the JS code -->
-            </div>
+                </div>
 
         </div>
-
     </div>
 
     <script src="script.js"></script>
